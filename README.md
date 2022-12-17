@@ -24,3 +24,7 @@ for flag in ecb.attack():
   
 - plaintext: *input + flag*
   - The size of the *flag* is not important
+
+# Input: 
+
+*cipher* is a function that takes bytes as input and returns the encrypted bytes
