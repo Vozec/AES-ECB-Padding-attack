@@ -3,17 +3,17 @@ This tool automates and facilitates a padding attack on AES with ECB mode
 
 # Usage :
 ```python
-attacker = Padding_Attack(
+ecb = Padding_Attack(
 	cipher = cipher,
-	know = b"",
+	know = b"ThIs",
 	left_pad = True,
 	charset = "abcdefghijklmnopqrstuvwxyz"+\
-				"ABCDEFGHIJKLMNOPQRSTUVWXYZ" +\
-				"0123456789" +\
-				"!*-/+_"
+		"ABCDEFGHIJKLMNOPQRSTUVWXYZ" +\
+		"0123456789" +\
+		"!*-/+_"
 )
 
-for flag in attacker.attack():
+for flag in ecb.attack():
 	print(flag)
 ```
 
