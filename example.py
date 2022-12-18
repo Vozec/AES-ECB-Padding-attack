@@ -8,12 +8,12 @@ from AES_ECB_Padding_Attack import *
 
 engine = AES.new(urandom(16), AES.MODE_ECB)
 
-##########################################################
-# Case 1 : random_padding[1-16] + input + flag(len%16=0) #
-##########################################################
+################################################
+# Case 1 : random_padding[1-16] + input + flag #
+################################################
 
 def cipher_1(data:bytes) -> bytes:
-	secret = b'ThIs_Is_tH3_Sec4Et!!!!0123456789'
+	secret = b'ThIs_Is_tH3_Sec4Et!'# 
 	rdn_padding = b'X'*5
 	return engine.encrypt(
 		pad(rdn_padding+data+secret,16)
