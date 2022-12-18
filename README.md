@@ -19,11 +19,8 @@ for flag in ecb.attack():
 
 # Use cases:
 
-- plaintext: *random_padding[1-16] + input + flag*
-  - The size of the *flag* must be a multiple of 16
-  
-- plaintext: *input + flag*
-  - The size of the *flag* is not important
+- ``plaintext``: *random_padding[1-16] + input + flag*  
+- ``plaintext``: *input + flag*
 
 # Input: 
 
